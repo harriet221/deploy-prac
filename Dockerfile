@@ -16,7 +16,7 @@ RUN chmod +x ./gradlew
 # 애플리케이션 빌드
 RUN ./gradlew clean build
 
-RUN mv build/libs/*.jar /app/app.jar
+RUN mv build/libs/*.jar /app.jar
 
 # 현재 폴더에서 app.jar 빼고 전부 (빌드용 파일 등) 제거
 RUN rm -rf *
